@@ -7,7 +7,7 @@ body {
     .grid {
         grid-template-columns: 1fr 1fr;
         padding:64px 7.6% 64px 9%;
-        grid-gap:120px;
+        grid-gap:60px;
         .container1 {
             max-width:580px;
             margin:0 auto;
@@ -87,6 +87,9 @@ body {
             }
         }
         @media screen and (max-width:991px) {
+            > &.grid {
+                grid-gap:120px !important;
+            }
             .formcontainer {
                 &.grid {
                     grid-template-columns: 1fr !important;
