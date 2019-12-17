@@ -1,0 +1,21 @@
+footer {
+    height:73px; 
+    background-color: $black;
+    padding:0 4.4%;
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .container1 {
+        padding:16px 0;
+        justify-self:center;
+        justify-self: left;
+        img {
+            max-width:256px;
+            height:40px;
+        }
+    }
+    .container2 {
+        align-self:center;
+        justify-self: right;
+    }
+}
