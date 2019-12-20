@@ -17,3 +17,17 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+// Trying to get form to hide label on click
+$(document).click(function() {
+  $('input').each(function() {
+    var label = $("label[for='" + $(this).attr('id') + "']");
+    $(this).removeClass('active');
+    label.show();
+  })
+})
+$('input').focus (function() {
+  $(this).addClass('active');
+  var dis = $(this);
+  var label = $("label[for='" + $(this).attr('id') + "']");
+  $(this).prev('label').hide();
+})
